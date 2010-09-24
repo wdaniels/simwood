@@ -200,7 +200,7 @@ class Simwood {
         $mode = $params['mode'];
 
         // write response into response array
-        $this->response[$mode] = isset($options['output']) && $options['output'] === 'json' ? json_decode($result) : $results;
+        $this->response[$mode] = isset($options['output']) && $options['output'] === 'json' ? json_decode($result) : $result;
         
         // return self
         return $this;
